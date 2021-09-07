@@ -39,6 +39,10 @@ body{
 	background-color: #032463;
 	}
 
+.desc-about{
+	margin-top: 10rem;
+}
+
 
 @media (min-width: 778px)
 {
@@ -222,8 +226,8 @@ footer{
 
 .subtitle{
 	/*font-style: italic;*/
-	font-weight: 600;
-	font-size: 20px;
+	font-weight: 400;
+	font-size: 18px;
 	color: #3b3b3b;
 	line-height: 28px;
 	font-family: "Montserrat", sans-serif;
@@ -326,4 +330,71 @@ footer{
 }
 .show{
 	display: block;
+}
+
+/* work */
+
+.portfolio{
+	margin-top: 6rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio .item{
+	position: relative;
+	width: 170px;
+	height: 170px;
+	margin: 5px;
+	padding: 5px;
+	background: transparent;
+}
+
+.portfolio .item:first-child{
+	border: 1px solid #bcb600;
+}
+.portfolio .item:nth-child(2){
+	border: 1px solid #54ba69;
+}
+.portfolio .item:last-child{
+	border: 1px solid #d87102;
+}
+
+.portfolio .item img{
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio .item:first-child .action{
+	background-color: #bcb600cc;
+}
+.portfolio .item:nth-child(2) .action{
+	background-color: #54ba69cc;
+}
+.portfolio .item:last-child .action{
+	background-color: #d87102cc;
+}
+
+.portfolio .item .action{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+.portfolio .item .action a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 5px 15px;
+}
+
+.portfolio .item:hover .action{
+	opacity: 1;
 }
