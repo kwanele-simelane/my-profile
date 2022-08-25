@@ -82,3 +82,12 @@ button{
     width: 100%;    
 }
 
+@media (min-width: 320px){
+
+    .container,
+    .container .generator{
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+}
