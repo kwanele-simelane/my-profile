@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Tweet Generator - Web Profile | Kwanele Simelane</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tweet your Now Playing</h2>
+        <small>Use the cool predefined Template 😉</small>
+
+        <div class="generator">
+            <label for="image__file" class="file">
+                Select the Image
+                <br>
+                <i class="fa fa-2x fa-camera"></i>
+                <input type="file" id="image__file">
+                <br>
+                <br>
+                <span id="image__name"></span>
+            </label>
+
+            <label for="song__title">Song Title</label>
+            <input type="text" id="song__title">
+
+            <label for="song__artist">Song Artist(s)</label>
+            <input type="text" id="song__artist">
+
+            <label for="song__duration">Song Duration</label>
+            <input type="text" id="song__duration">
+
+            <label for="playlist">Playing from:</label>
+            <input type="text" id="playlist" placeholder="name of the playlist / album">
+        </div>
+
+        <button id="download">Download Image</button>
+
+        <canvas id="tweet__image"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
