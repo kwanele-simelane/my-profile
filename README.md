@@ -11,7 +11,7 @@ I built this website with pure html, css and javascript as an experiment to text
 
 I am available to collaborate on any open source projects on any language and any software development tool.
 
-# Collaborate with me on social media
+# Connect with me on social media
 - twitter: https://twitter.com/kwanele_dev
 - dev.to: https://dev.to/kwanele_dev
 - github: https://github.com/kwanele-simelane
